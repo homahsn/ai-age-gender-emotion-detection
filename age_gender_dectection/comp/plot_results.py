@@ -105,12 +105,6 @@ def compare():
     accuracy1,recall1,precision1,mse1 = evaluate(correct_genders,correct_ages,smahesh_genders,smahesh_ages)
     accuracy2,recall2,precision2,mse2 = evaluate(correct_genders,correct_ages,agender_genders,agender_ages)
 
-    plot("Accuracy (gender)","Model","Accuracy","smahesh",accuracy1,"agender",accuracy2);
-    plot("Recall (gender)","Model","Recall","smahesh",recall1,"agender",recall2);
-    plot("Precision (gender)","Model","Precision","smahesh",precision1,"agender",precision2);
-    plot("Mean Squared Error (age)","Model","MSE","smahesh",mse1,"agender",mse2);
-
-
     print("smahesh: Accuracy=%5.2f, Recall=%5.2f, Precision=%5.2f, MSE=%5.2f"%(accuracy1,recall1,precision1,mse1))
     print("agender: Accuracy=%5.2f, Recall=%5.2f, Precision=%5.2f, MSE=%5.2f"%(accuracy2,recall2,precision2,mse2))
 
